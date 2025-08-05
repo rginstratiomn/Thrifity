@@ -1,0 +1,2 @@
+# Thrifity
+tugas database 
