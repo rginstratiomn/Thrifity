@@ -1,0 +1,114 @@
+/* === index.css === */
+/* Styling untuk halaman selamat datang (index.php) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/akidenz-grotesk-bq');
+
+/* Pengaturan Dasar Body */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Gradasi radial dari kuning pucat ke ungu muda */
+    background: radial-gradient(circle, #fff9c4, #f3e8ff);
+}
+
+/* Kontainer untuk Judul */
+.title-container {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* Styling untuk "Welcome to" */
+.welcome-text {
+    margin-top: -0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 6.5rem;
+    color: #770faf;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+/* Styling untuk "THRIFITY" */
+.brand-name {
+    margin-top: -0.5rem;
+    font-family: 'Akidenz-Grotesk BQ', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 9rem;
+    color: #770faf;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+
+/* Kontainer untuk tombol otentikasi */
+.auth-links {
+    display: flex;
+    margin-top: -1rem;
+    gap: 2.5rem;
+    /* Jarak antar tombol */
+}
+
+/* Styling untuk tombol Login dan Register */
+.auth-links a {
+    text-decoration: none;
+    font-family: 'Cooper BT', serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #770faf;
+    background-color: #ffde59;
+    padding: 1rem 3.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    font-size: 2.8rem;
+    border: 3px solid #ffc813;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 5px #4d0773;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+    text-align: center;
+}
+
+/* Efek hover pada tombol */
+.auth-links a:hover {
+    background-color: #ffd13a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 7px #4d0773;
+    transform: translateY(-4px);
+}
+
+/* Efek aktif saat tombol diklik */
+.auth-links a:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px #4d0773;
+}
+
+/* Media Query untuk responsivitas */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 3.5rem;
+    }
+
+    .welcome-text {
+        font-size: 2rem;
+    }
+
+    .auth-links {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .auth-links a {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+}

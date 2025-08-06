@@ -1,0 +1,195 @@
+/* === style.css === */
+/* Styling umum dan untuk halaman profil (profile.php) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cooper+BT:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi&display=swap');
+
+/* Pengaturan Dasar Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#fff9c4, #f3e8ff);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Navigasi */
+.navbar {
+    background-color: #770faf;
+    padding: 1rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #5d0b8c;
+}
+
+/* Kontainer Utama Profil */
+.profile-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Judul */
+.profile-container h2,
+.profile-container h3 {
+    font-family: 'Cooper BT', serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #770faf;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-container h3 {
+    font-size: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-top: 2px dashed #e0cff0;
+    padding-top: 2rem;
+}
+
+/* Informasi Pengguna */
+.profile-container p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.profile-container p strong {
+    color: #5d0b8c;
+    font-weight: 700;
+}
+
+/* Garis Pemisah */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #c5a3e6, rgba(0, 0, 0, 0));
+    margin: 2rem 0;
+}
+
+/* Tombol-Tombol */
+.profile-container button {
+    padding: 12px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: none;
+    margin-top: 1rem;
+}
+
+.profile-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol Aksi Utama (Jadi Penjual, Tambah Produk) */
+form[action="become_seller.php"] button,
+a[href="add_product.php"] button {
+    background-color: #770faf;
+    color: white;
+}
+
+form[action="become_seller.php"] button:hover,
+a[href="add_product.php"] button:hover {
+    background-color: #5d0b8c;
+}
+
+/* Tombol Logout (Gaya Sekunder/Bahaya) */
+form[action="logout.php"] button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+form[action="logout.php"] button:hover {
+    background-color: #c0392b;
+}
+
+
+/* Bagian Dashboard Penjual */
+.product {
+    background: radial-gradient(#ffffff, #fff7dd);
+    border: 1px solid #FBC02D;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.product img {
+    border-radius: 10px;
+    flex-shrink: 0;
+    /* Mencegah gambar menyusut */
+}
+
+/* Form Restock */
+form[action="restock_product.php"] {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+    /* Mendorong form ke paling kanan */
+    margin-top: 0;
+}
+
+form[action="restock_product.php"] input[type="number"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    width: 90px;
+}
+
+form[action="restock_product.php"] input[type="number"]:focus {
+    outline: none;
+    border-color: #770faf;
+    box-shadow: 0 0 0 2px #e0cff0;
+}
+
+form[action="restock_product.php"] button {
+    background-color: #ffde59;
+    color: #5d0b8c;
+    font-size: 1rem;
+    margin-top: 0;
+    /* Reset margin atas */
+    padding: 10px 20px;
+}
+
+form[action="restock_product.php"] button:hover {
+    background-color: #ffd13a;
+}
