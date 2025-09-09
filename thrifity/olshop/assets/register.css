@@ -1,0 +1,138 @@
+/* === register.css === */
+/* Styling for the register page (register.php) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cooper+BT:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/roca-two');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi&display=swap');
+
+/* Pengaturan Dasar Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#fff9c4, #f3e8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Kontainer Form Register */
+.container {
+    background: radial-gradient(#ffde59, #fff2af);
+    padding: 2.5rem 2rem;
+    border-radius: 35px;
+    border: 1px solid #FBC02D;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Judul Form */
+h2 {
+    font-family: 'Cooper BT', serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    color: #770faf;
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background: radial-gradient(#ffffff, #fff7dd);
+}
+
+/* Focus effect on Input Fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #1e88e5;
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.3);
+}
+
+/* "Show Password" checkbox container */
+.show-password-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -0.3rem;
+    margin-bottom: 0rem;
+
+}
+
+.show-password-container label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #354eab;
+    align-items: center;
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling Tombol Login */
+button[name="register"] {
+    width: 100%;
+    padding: 16px;
+    margin-top: 1rem;
+    background-color: #770faf;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Baloo Thambi', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 5px 10px rgba(74, 20, 140, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Efek hover pada Tombol Login */
+button[name="register"]:hover {
+    background-color: #5d0b8c;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(74, 20, 140, 0.4);
+}
+
+/* Teks Bawah (Link ke Halaman Register) */
+p.login-link {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2rem;
+    color: #0D47A1;
+    font-weight: 700;
+    margin-bottom: -0.5rem;
+}
+
+p.login-link a {
+    font-family: 'Poppins', sans-serif;
+    color: #c89f00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+.error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    border: 1px solid #D8000C;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
